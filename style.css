@@ -110,6 +110,15 @@ a:hover {
 
 @media (min-width: 0px) {
 
+.back_image {
+	height: 0px;
+	width: auto;
+	position: absolute;
+	z-index: 0;
+	top: 0px;
+	left: 0px;
+}
+
 #unic_content {
 	font-family: sans-serif;
 	font-size: 20px;
@@ -246,6 +255,15 @@ a:hover {
 }
 
 @media (min-width: 800px) {
+
+.back_image {
+	height: 400px;
+	width: auto;
+	position: absolute;
+	z-index: 0;
+	top: 0px;
+	left: 0px;
+}
 
 #unic_content {
 	font-family: sans-serif;
