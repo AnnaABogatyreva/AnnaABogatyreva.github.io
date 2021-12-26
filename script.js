@@ -1,7 +1,7 @@
 window.addEventListener('resize', onResize);  // зададим обработчик события
 
 function onResize() {  // событие при изменении размера окна / загрузке страницы
-	if (window.innerWidth < 800) {
+	if (window.innerWidth < 850) {
 		btn_vis("visible", "hidden");
 		box2_vis("none");
 	} else {
