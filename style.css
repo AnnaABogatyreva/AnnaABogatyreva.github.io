@@ -14,6 +14,7 @@ menu {
 	height: 380px;
 	width: 100%;
 	overflow: hidden;
+	left: -0px;
 }
 
 .image_block .back_image {
@@ -246,7 +247,7 @@ a:hover {
 
 .olymp_menu {
 	grid-column: 1 / 2;
-	grid-row: 1;
+	grid-row: 1 / 3;
 	font-weight: bold;
 	position: sticky;
     top: 100px;
@@ -260,7 +261,7 @@ a:hover {
 }
 
 .olymp_certificates {
-	grid-column: 1	 / 10;
+	grid-column: 2 / 10;
 	grid-row: 2;
 }
 
