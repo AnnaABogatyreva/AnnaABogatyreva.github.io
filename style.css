@@ -42,7 +42,6 @@ menu {
 	padding: 10px;
 	padding-left: 20px;
 	background-color: darkblue;
-	opacity: 1;
 }
 
 .box1 {
@@ -51,8 +50,6 @@ menu {
 	text-align: left;
 	color:floralwhite;
 	margin-right: auto;
-	z-index: 9998;
-	opacity: 1;
 }
 
 .box1o {
@@ -86,7 +83,6 @@ menu {
 	text-align: center;
 	color: floralwhite;
 	margin-right: 30px;
-	z-index: 9998;
 }
 
 .box1 .name {
@@ -130,6 +126,15 @@ a:hover {
 }
 
 @media (min-width: 0px) {
+
+.back_image {
+	height: 0px;
+	width: auto;
+	position: absolute;
+	z-index: 0;
+	top: 0px;
+	left: 0px;
+}
 
 #unic_content {
 	font-family: sans-serif;
@@ -241,18 +246,16 @@ a:hover {
 	display: grid;
 	grid-template-columns: repeat(9, 1fr);
 	grid-template-rows: repeat(2, 1fr);
-  	-grid-auto-rows: minmax(100px, auto);
+  	grid-auto-rows: minmax(100px, auto);
 	text-align: left;
-	display: inline-block;
 }
 
 .olymp_menu {
 	grid-column: 1 / 2;
-	grid-row: 1 / 3;
+	grid-row: 1;
 	font-weight: bold;
 	position: sticky;
     top: 100px;
-	z-index: 0;
 }
 
 .olymp_main {
@@ -262,14 +265,22 @@ a:hover {
 }
 
 .olymp_certificates {
-	grid-column: 2 / 10;
+	grid-column: 1 / 10;
 	grid-row: 2;
-	height: min-content;
 }
 
 }
 
 @media (min-width: 800px) {
+
+.back_image {
+	height: 400px;
+	width: auto;
+	position: absolute;
+	z-index: 0;
+	top: 0px;
+	left: 0px;
+}
 
 #unic_content {
 	font-family: sans-serif;
@@ -381,7 +392,7 @@ a:hover {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: repeat(1, 1fr);
-  	-grid-auto-rows: minmax(100px, auto);
+  	grid-auto-rows: minmax(100px, auto);
 	text-align: left;
 }
 
@@ -403,7 +414,6 @@ a:hover {
 .olymp_certificates {
 	grid-column: 11 / 13;
 	grid-row: 1;
-	height: min-content;
 }
 
 }
@@ -476,7 +486,7 @@ a:hover {
 
 #adapt_image {
 	width: 100%;
-	-height: min-content;
+	height: auto;
 }
 
 /* заголовок текста */
@@ -490,7 +500,7 @@ article {
 
 /* класс якоря для смещения */
 
-a .anchor {
+a.anchor {
     display: block;
     position: relative;
     top: -70px;
