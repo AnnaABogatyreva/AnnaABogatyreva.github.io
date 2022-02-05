@@ -1,0 +1,21 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="canvas.css">
+	<script src="canvas.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body onload="drawNet()">
+	<canvas id="canvas" width="1000" height="600"></canvas>
+	<div>y = a*x^2 + b*x + c</div>
+	<div>a = <input id="ia"></div>
+	<div>b = <input id="ib"></div>
+	<div>c = <input id="ic"></div>
+	<button onclick="drawGraph()">Ввод</button>
+	<button onclick="drawNet()">Очистить</button>
+	<a href="learning_activities.html"><button>Назад</button></a>
+</body>
+
+</html>
